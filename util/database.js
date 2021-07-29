@@ -4,7 +4,7 @@ const connect = () => {
 
     return new Promise(resolve => {
         try {
-            mongoose.connect('mongodb+srv://naitik:naitik123@cluster0-6wc7i.mongodb.net/shop',
+            mongoose.connect(URI,
                 { useCreateIndex: true, useUnifiedTopology: true,useNewUrlParser:true },
                 (err => {
                     if (!err) {
